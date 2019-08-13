@@ -1,5 +1,21 @@
-.App {
-  text-align: center;
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  width: 960px;
+  height: 600px;
+  border-radius: 6px;
+  overflow: auto;
+  background-color: #F9F9F9;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .App-logo {
@@ -9,7 +25,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

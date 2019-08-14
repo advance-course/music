@@ -1,3 +1,5 @@
+import { AxiosRequestConfig } from 'axios';
+
 declare namespace http {
   interface ServerResponse<T> {
     /**

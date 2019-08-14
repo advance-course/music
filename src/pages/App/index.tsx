@@ -1,4 +1,6 @@
 import React from 'react';
+import { Icon, Button } from 'antd';
+import { NavLink } from 'react-router-dom';
 import './App.css';
 
 export default function App() {
@@ -15,22 +17,31 @@ export default function App() {
 
       <div className="content-container">
         <aside className="app-sidemenu">
-          <div>loading</div>
-          <div>loading</div>
-          <div>loading</div>
-          <div>loading</div>
-          <div>loading</div>
-          <div>loading</div>
-          <div>loading</div>
-          <div>loading</div>
-          <div>loading</div>
-          <div>loading</div>
-          <div>loading</div>
-          <div>loading</div>
-          <div>loading</div>
-          <div>loading</div>
-          <div>loading</div>
-          <div>loading</div>
+          <div className="user-info">
+            <div className="avatar" />
+            <span className="no-login">未登录</span>
+            <Icon type="caret-right" />
+          </div>
+
+          <NavLink to="/" exact className="nav" activeClassName="active">
+            <Icon type="dashboard" theme="outlined" className="nav-icon" />
+            <span>发现音乐</span>
+          </NavLink>
+          
+          <NavLink to="/fm" className="nav" activeClassName="active">
+            <Icon type="gold" theme="outlined" className="nav-icon" />
+            <span>私人FM</span>
+          </NavLink>
+
+          <NavLink to="/video" className="nav" activeClassName="active">
+            <Icon type="alert" theme="outlined" className="nav-icon" />
+            <span>视频</span>
+          </NavLink>
+
+          <NavLink to="/friend" className="nav" activeClassName="active">
+            <Icon type="bug" theme="outlined" className="nav-icon" />
+            <span>朋友</span>
+          </NavLink>
         </aside>
 
         <main className="app-main">

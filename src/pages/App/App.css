@@ -57,8 +57,44 @@ body {
   background-color: #EDEDED;
 }
 
-.app-sidemenu div {
-  height: 100px;
+.user-info {
+  display: flex;
+  height: 60px;
+  padding-left: 10px;
+  align-items: center;
+}
+
+.user-info .avatar {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 20px;
+  background-color: #E0E0E0;
+}
+
+.user-info .no-login {
+  color: #333333;
+}
+
+.app-sidemenu .nav {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  color: #333333;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 16px;
+}
+
+.app-sidemenu .nav.active {
+  color: #c3463a;
+  background: #e2e2e2;
+}
+
+.app-sidemenu .nav-icon {
+  margin-right: 10px;
+  font-size: 18px;
 }
 
 .app-main {

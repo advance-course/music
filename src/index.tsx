@@ -5,16 +5,7 @@ import './index.css';
 import App from 'pages/App';
 import * as serviceWorker from './serviceWorker';
 import 'utils/http';
-import { HOST } from 'utils/host';
 import { BrowserRouter, Route } from 'react-router-dom';
-
-axios.get(`${HOST}/search`, {
-  params: {
-    keywords: '海阔天空'
-  }
-}).then(res => {
-  console.log(res);
-})
 
 const Index = () => (
   <BrowserRouter>

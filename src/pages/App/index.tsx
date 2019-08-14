@@ -1,6 +1,7 @@
 import React from 'react';
-import { Icon, Button } from 'antd';
+import { Icon } from 'antd';
 import { NavLink } from 'react-router-dom';
+import Discover from './components/Discover';
 import './App.css';
 
 export default function App() {
@@ -45,18 +46,7 @@ export default function App() {
         </aside>
 
         <main className="app-main">
-          <div style={{ height: '200px' }}>主要内容区域</div>
-          <div style={{ height: '200px' }}>主要内容区域</div>
-          <div style={{ height: '200px' }}>主要内容区域</div>
-          <div style={{ height: '200px' }}>主要内容区域</div>
-          <div style={{ height: '200px' }}>主要内容区域</div>
-          <div style={{ height: '200px' }}>主要内容区域</div>
-          <div style={{ height: '200px' }}>主要内容区域</div>
-          <div style={{ height: '200px' }}>主要内容区域</div>
-          <div style={{ height: '200px' }}>主要内容区域</div>
-          <div style={{ height: '200px' }}>主要内容区域</div>
-          <div style={{ height: '200px' }}>主要内容区域</div>
-          <div style={{ height: '200px' }}>主要内容区域</div>  
+          <Discover />
         </main>        
       </div>
 

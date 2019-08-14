@@ -1,0 +1,20 @@
+.banner-container {
+  width: 540px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin: 20px auto;
+}
+
+.banner-container .banner-item {
+  display: block;
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.banner-container .banner-item img {
+  width: 100%;
+}

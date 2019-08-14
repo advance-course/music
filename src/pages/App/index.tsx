@@ -1,8 +1,12 @@
 import React from 'react';
 import { Icon } from 'antd';
 import { NavLink, Route } from 'react-router-dom';
-import Discover from './components/Discover';
 
+// 首页的组件
+import Discover from './components/Discover';
+import RSongList from './components/RSongList';
+
+// 页面组件
 import FM from 'pages/FM';
 import Video from 'pages/Video';
 import Friend from 'pages/Friend';
@@ -56,6 +60,7 @@ export default function App() {
             render={() => (
               <>
                 <Discover />
+                <RSongList />
               </>
             )}
           />

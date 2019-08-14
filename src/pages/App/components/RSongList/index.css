@@ -1,0 +1,59 @@
+.rsl-container {
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.rsl-container .title {
+  height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.rsl-container .list-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.rsl-container .item {
+  width: 135px;
+  height: 175px;
+  margin-bottom: 30px;
+}
+
+.rsl-container .img-wrapper {
+  width: 135px;
+  height: 135px;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.rsl-container .img-wrapper img {
+  width: 100%;
+}
+
+.rsl-container .img-wrapper .mask {
+  position: absolute;
+  width: 100%;
+  height: 24px;
+  left: 0;
+  top: 0;
+  background: linear-gradient(to bottom , rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+}
+
+.rsl-container .img-wrapper .play {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  display: flex;
+  color: #FFF;
+  font-size: 12px;
+  align-items: center;
+}
+
+.rsl-container .tip {
+  font-size: 13px;
+  margin-top: 10px;
+  color: #333;
+}

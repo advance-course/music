@@ -1,5 +1,3 @@
-import { AxiosRequestConfig } from 'axios';
-
 declare namespace http {
   interface ServerResponse<T> {
     /**
@@ -9,4 +7,6 @@ declare namespace http {
 
     result: T
   }
+
+  type PromiseResp<T> = Promise<ServerResponse<T>>;
 }

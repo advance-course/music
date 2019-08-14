@@ -1,7 +1,12 @@
 import React from 'react';
 import { Icon } from 'antd';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Route } from 'react-router-dom';
 import Discover from './components/Discover';
+
+import FM from 'pages/FM';
+import Video from 'pages/Video';
+import Friend from 'pages/Friend';
+
 import './App.css';
 
 export default function App() {
@@ -46,8 +51,18 @@ export default function App() {
         </aside>
 
         <main className="app-main">
-          <Discover />
-        </main>        
+          
+          <Route path="/" exact 
+            render={() => (
+              <>
+                <Discover />
+              </>
+            )}
+          />
+          <Route path="/fm" component={FM} />
+          <Route path="/video" component={Video} />
+          <Route path="/friend" component={Friend} />  
+        </main>
       </div>
 
       <footer className="app-footer">play area</footer>

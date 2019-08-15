@@ -1,6 +1,7 @@
 import React from 'react';
 import { Track } from '../../api';
 import { Icon } from 'antd';
+import moment from 'moment';
 import './index.css';
 
 export interface PlayListProps {
@@ -34,7 +35,7 @@ export default function Playlist({ list = [] }: PlayListProps) {
           <div className="title">{item.name}</div>
           <div className="singer">{item.ar![0].name}</div>
           <div className="album">{item.al!.name}</div>
-          <div className="duration">{item.dt}</div>
+          <div className="duration">{moment(item.dt).format('mm:ss')}</div>
         </div>
       ))}
     </div>

@@ -10,6 +10,7 @@ import RSongList from './components/RSongList';
 import FM from 'pages/FM';
 import Video from 'pages/Video';
 import Friend from 'pages/Friend';
+import SongList from 'pages/SongList';
 
 import './App.css';
 
@@ -66,7 +67,8 @@ export default function App() {
           />
           <Route path="/fm" component={FM} />
           <Route path="/video" component={Video} />
-          <Route path="/friend" component={Friend} />  
+          <Route path="/friend" component={Friend} />
+          <Route path="/song/list" component={SongList} />
         </main>
       </div>
 

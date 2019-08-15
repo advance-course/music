@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Spin, Icon } from 'antd';
 import { songListApi, ListItem } from './api';
 import './index.css';
+import { NavLink } from 'react-router-dom';
 
 export default function RSongList() {
   const [list, setList] = useState<ListItem[]>([]);
@@ -21,7 +22,7 @@ export default function RSongList() {
 
         <div className="list-container">
           {list.map((item, i) => (
-            <div className="item" key={item.id || i}>
+            <NavLink to={{ pathname: '/song/list', state: { id: item.id } }} className="item" key={item.id || i}>
               <div className="img-wrapper">
                 <img src={item.picUrl} alt="" />
                 <div className="mask" />
@@ -30,8 +31,8 @@ export default function RSongList() {
                   <div className="play-count">{item.playCount ? `${(item.playCount / 10000).toFixed(0)}万` : ''}</div>
                 </div>
               </div>
-              <div className="tip">{item.copywriter}</div>
-            </div>
+              <div className="tip">{item.name}</div>
+            </NavLink>
           ))}
         </div>
         

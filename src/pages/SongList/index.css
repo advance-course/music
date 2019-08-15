@@ -1,0 +1,158 @@
+.song-list-detail {
+  padding: 15px 30px;
+  display: flex;
+}
+
+.song-list-detail .cover-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 5px;
+  margin-right: 30px;
+}
+
+.song-list-detail .info {
+  flex: 1;
+}
+
+.song-list-detail .title {
+  display: flex;
+  align-items: center;
+}
+
+.song-list-detail .pre-tag {
+  width: 36px;
+  height: 20px;
+  border-radius: 3px;
+  border: 1px solid red;
+  font-size: 12px;
+  color: red;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.song-list-detail .song-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.song-list-detail .creator {
+  height: 25px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.song-list-detail .avatar {
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.song-list-detail .nickname {
+  font-size: 12px;
+  color: #5f7dad;
+  margin-right: 10px;
+}
+
+.song-list-detail .create-time {
+  font-size: 12px;
+}
+
+.song-list-detail .tags {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #333;
+}
+
+.song-list-detail .tip {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #333;
+}
+
+.song-list-detail .btns-wrapper {
+  display: flex;
+  margin-top: 25px;
+}
+
+.song-list-detail .btn-container {
+  height: 30px;
+  box-sizing: border-box;
+  display: flex;
+  border: 1px solid #d9d9d9;
+  align-items: center;
+  margin-right: 10px;
+  border-radius: 15px;
+  padding: 0 15px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.song-list-detail .playall {
+  border: none;
+  background: linear-gradient(to right, #ea5f4e, #c4473b);
+  color: #FFF;
+  padding: 0;
+}
+.song-list-detail .playall:hover {
+  background: linear-gradient(to right, #ea5f4e, orange);
+}
+
+.song-list-detail .play-list {
+  width: 105px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.song-list-detail .add-list {
+  height: 30px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 0.5px solid rgba(255, 255, 255, 0.2);
+}
+
+.song-list-detail .btn-icon {
+  font-size: 16px;
+}
+
+.song-list-detail .btn-text {
+  margin-left: 8px;
+  line-height: 1;
+}
+
+/** 列表 */
+.song-list-content {
+  margin-top: 30px;
+}
+
+.song-list-content .nav-container {
+  height: 30px;
+  display: flex;
+  border-bottom: 0.5px solid #eee;
+  box-sizing: border-box;
+  margin: 0 30px;
+}
+
+.song-list-content .navs {
+  display: flex;
+  height: 30px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #333;
+}
+
+.song-list-content .nav {
+  margin-right: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+.song-list-content .nav.active {
+  color: #c3473a;
+  border-bottom: 2px solid #c3473a;
+}

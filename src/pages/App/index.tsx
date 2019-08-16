@@ -12,17 +12,21 @@ import Video from 'pages/Video';
 import Friend from 'pages/Friend';
 import SongList from 'pages/SongList';
 
+import logo from './images/logo.svg';
 import './App.css';
 
 export default function App() {
   return (
     <div className="app-container">
       <header className="app-header">
-        <div className="app-name">M U S I C</div>
+        <div className="app-name">
+          <img src={logo} className="App-logo" alt="logo" />
+          <span>网易云音乐</span>
+        </div>
         <div className="app-header-area"></div>
         <div className="app-search-setting">
-          <div style={{ marginRight: '20px' }}>搜索</div>
-          <div style={{ marginRight: '20px' }}>设置</div>
+          <div style={{ marginRight: '20px' }}><Icon type="search" /></div>
+          <div style={{ marginRight: '20px' }}><Icon type="setting" /></div>
         </div>
       </header>
 

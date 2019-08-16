@@ -102,11 +102,6 @@ body {
   overflow: auto;
 }
 
-.app-footer {
-  height: 50px;
-  background-color: orange;
-}
-
 .App-logo {
   animation: App-logo-spin infinite 6s linear;
   height: 30px;

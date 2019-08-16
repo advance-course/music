@@ -5,6 +5,7 @@ import { NavLink, Route } from 'react-router-dom';
 // 首页的组件
 import Discover from './components/Discover';
 import RSongList from './components/RSongList';
+import Playbar from 'modules/PlayBar';
 
 // 页面组件
 import FM from 'pages/FM';
@@ -75,8 +76,7 @@ export default function App() {
           <Route path="/song/list" component={SongList} />
         </main>
       </div>
-
-      <footer className="app-footer">play area</footer>
+      <Playbar />
     </div>
   )
 }

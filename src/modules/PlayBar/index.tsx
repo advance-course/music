@@ -27,11 +27,15 @@ export default function PlayBar() {
     }
   }
 
+  function audioChange(e: any) {
+    console.log(e.target);
+  }
+
   return (
     <footer className="app-play-bar" onClick={play}>
       <Slider max={musicInfo.br} current={playTime} />
       <div>{playTime}</div>
-      {musicInfo.url && <audio ref={audioRef} src={musicInfo.url} />}
+      {musicInfo.url && <audio ref={audioRef} src={musicInfo.url} onChange={audioChange} />}
     </footer>
   )
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Icon } from 'antd';
 import { NavLink, Route } from 'react-router-dom';
 
@@ -6,6 +6,7 @@ import { NavLink, Route } from 'react-router-dom';
 import Discover from './components/Discover';
 import RSongList from './components/RSongList';
 import Playbar from 'modules/PlayBar';
+import Login from 'modules/Login';
 
 // 页面组件
 import FM from 'pages/FM';
@@ -17,6 +18,7 @@ import logo from './images/logo.svg';
 import './App.css';
 
 export default function App() {
+  const [loginVisible, setLoginVisible] = useState(false);
   return (
     <div className="app-container">
       <header className="app-header">
@@ -33,11 +35,13 @@ export default function App() {
 
       <div className="content-container">
         <aside className="app-sidemenu">
-          <div className="user-info">
+          <div className="user-info" onClick={() => setLoginVisible(true)}>
             <div className="avatar" />
             <span className="no-login">未登录</span>
             <Icon type="caret-right" />
           </div>
+
+          <Login visible={loginVisible} onClose={() => setLoginVisible(false)} />
 
           <NavLink to="/" exact className="nav" activeClassName="active">
             <Icon type="dashboard" theme="outlined" className="nav-icon" />

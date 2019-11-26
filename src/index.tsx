@@ -1,19 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import axios from 'axios';
-import './index.css';
+import { BrowserRouter, Route } from 'react-router-dom';
 import App from 'pages/App';
 import * as serviceWorker from './serviceWorker';
 import 'utils/http';
-import { BrowserRouter, Route } from 'react-router-dom';
+import './index.css';
 
 const Index = () => (
   <BrowserRouter>
     <Route path="/" component={App} />
+    <Route path="/music" component={App} />
   </BrowserRouter>
 )
-
-export default axios;
 
 ReactDOM.render(<Index />, document.getElementById('root'));
 

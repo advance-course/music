@@ -3,6 +3,8 @@ import {Modal, Form, Icon, Input, Button} from 'antd';
 import { FormComponentProps } from 'antd/lib/form';
 
 import bg from './images/bg.png';
+import { useSelector } from 'utils/dva';
+import { LoginState } from 'modules/Login/model';
 
 const Item = Form.Item;
 
@@ -12,6 +14,9 @@ export interface LoginProps extends FormComponentProps {
 }
 
 function Login({visible, onClose, form}: LoginProps) {
+  // @ts-ignore
+  const login = useSelector<any, LoginState>(state => state.login);
+  console.log(login.isLogin);
   const {getFieldDecorator, validateFields} = form;
   const handleSubmit = (e: any) => {
     e.preventDefault();    

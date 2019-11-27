@@ -1,17 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route } from 'react-router-dom';
+import {Provider} from 'react-redux';
+import {createApp} from 'utils/dva';
+import models from './models';
 import App from 'pages/App';
 import * as serviceWorker from './serviceWorker';
 import 'utils/http';
 import './index.css';
 
+const dvaApp = createApp({
+  initialState: {},
+  models
+});
+
+const store = dvaApp.getStore();
+
 const Index = () => (
-  <BrowserRouter>
-    <Route path="/" component={App} />
-    <Route path="/music" component={App} />
-  </BrowserRouter>
-)
+  <Provider store={store}>
+    <BrowserRouter>
+      <Route path="/" component={App} />
+    </BrowserRouter>
+  </Provider>
+);
 
 ReactDOM.render(<Index />, document.getElementById('root'));
 
